@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 20vh;
+  display: flex;
+  gap: 50px;
+  padding-inline: 230px;
+}
+
+.content {
+  padding-inline: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.card h3 {
+  width: 100px;
+}
+
+.card ul {
+  width: 200px;
+}
+
+.card h1 {
+  width: 200px;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.card ul {
+  text-decoration: none;
+}

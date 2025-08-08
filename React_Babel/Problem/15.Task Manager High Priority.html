@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Task Manager - Problem Statement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1,
+        h2 {
+            color: #0f172a;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🧠 React Task Manager - Coding Challenge</h1>
+
+    <div class="section">
+        <h2>✨ Objective:</h2>
+        <p>
+            Create a <strong>React Task Manager Application</strong> that allows users to <strong>add</strong>,
+            <strong>edit</strong>, <strong>delete</strong>, and <strong>toggle</strong> tasks.
+            Tasks should be <strong>sorted by priority</strong> and support <strong>filtering</strong> by
+            <em>status</em> and <em>priority</em>.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>✅ Requirements</h2>
+
+        <h3>1. Add Task</h3>
+        <ul>
+            <li>Each task must have a <code>name</code>, <code>priority</code> (<code>high</code>, <code>medium</code>,
+                <code>low</code>), and a <code>complete</code> status.</li>
+            <li>If the task name is empty, show an error: <strong>"Please Enter your Task"</strong>.</li>
+            <li>Tasks must be sorted: <strong>High &gt; Medium &gt; Low</strong>.</li>
+        </ul>
+
+        <h3>2. Edit Task</h3>
+        <ul>
+            <li>Clicking <code>Edit</code> should populate the input fields with the task's data.</li>
+            <li>Remove the original task during edit; re-add it upon submission.</li>
+        </ul>
+
+        <h3>3. Delete Task</h3>
+        <ul>
+            <li>Clicking <code>Delete</code> must remove the task from the list.</li>
+        </ul>
+
+        <h3>4. Toggle Completion</h3>
+        <ul>
+            <li>Clicking <code>Toggle</code> switches the task’s <code>complete</code> status.</li>
+            <li>If complete, apply <code>line-through</code> styling to the task name.</li>
+        </ul>
+
+        <h3>5. Filter Options</h3>
+        <ul>
+            <li>Users can filter by <strong>Priority</strong>: All, High, Medium, Low.</li>
+            <li>Users can filter by <strong>Status</strong>: All, Complete, Incomplete.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📘 UI Expectations</h2>
+        <ul>
+            <li>Text input for task name.</li>
+            <li>Dropdown to select priority.</li>
+            <li>Buttons: <code>Add Task</code>, <code>Edit</code>, <code>Toggle</code>, <code>Delete</code>.</li>
+            <li>Two dropdowns for filters.</li>
+            <li>Error message if the task name is empty.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Bonus</h2>
+        <ul>
+            <li>Use <code>Date.now()</code> to generate unique task IDs.</li>
+            <li>Sort the task list by priority every time a task is added or edited.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Evaluation Criteria</h2>
+        <ul>
+            <li>Proper use of React hooks (e.g., <code>useState</code>).</li>
+            <li>Clean and readable code.</li>
+            <li>Functional filtering and sorting logic.</li>
+            <li>Responsive UI and user-friendly interactions.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(255, 251, 251);
+    box-shadow: 1px 1px 3px 2px;
+    justify-content: right;
+    padding-inline: 100px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar a{
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family:cursive;
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  .navbar a:hover{
+    border-bottom: 2px solid greenyellow;
+    transition: 3s;
+  }
+  
+  .content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 100px;
+    background-color: azure;
+  }
