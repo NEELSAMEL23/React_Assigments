@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-inline: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Overview</h2>
+        <hr>
+        <p>This assignment focuses on integrating React with Redux, a predictable state container for JavaScript
+            applications. You will learn how to set up a React application with Redux and manage state efficiently using
+            Redux principles. By completing this assignment, you will gain practical experience in integrating Redux
+            into React applications and understand how to organize Redux logic within a React project.</p>
+        <b>Use of chakra UI is mandatory</b>
+        <h2>Detailed Explanation</h2>
+        <hr>
+
+
+        <h3>Topics</h3>
+
+        <ul>
+            <li>Setting up Redux in a React application</li>
+            <li>Creating actions, reducers, and the Redux store</li>
+            <li>Connecting React components to the Redux store</li>
+            <li>Dispatching actions to update the Redux state</li>
+            <li>Accessing state data from the Redux store in React components</li>
+        </ul>
+
+        <h2>Problem Statement</h2>
+        <p>You have been assigned to create a simple todo list application using React and Redux. The application should
+            allow users to add new todos, mark todos as completed, and delete todos. Managing the state of todos using
+            React's local state has become inefficient, so you have decided to integrate Redux into the application to
+            manage the todo state more effectively.</p>
+        <p>You are tasked with integrating Redux into a JavaScript application. Follow these guidelines:</p>
+        <ol>
+            <li>Redux Setup: Initialize a Redux store with an initial state and a reducer function.</li>
+            <li>React Integration: Connect React components to the Redux store using the hooks provided by react-redux.
+            </li>
+            <li>Define Actions: Create action types and action creators to represent different actions that can be
+                performed in the application.</li>
+            <li>Implement Reducers: Write reducer functions to handle each action type and update the Redux state
+                accordingly.</li>
+            <li>Dispatch Actions: Dispatch actions to the Redux store from React components to trigger state updates.
+            </li>
+            <li>Access State: Access state data from the Redux store in React components using mapStateToProps function.
+            </li>
+            <li>Structure of todo :</li>
+            
+            <div style="width: 900px; background-color: rgb(221, 221, 221);   border: 1px solid black; padding: 20px;">
+                const todo = {<br>
+                title: "string",<br>
+                status: "boolean"<br>
+                id: "UniqueId"<br>
+                }
+
+            </div>
+        </ol>
+    </div>
+</body>
+
+</html>

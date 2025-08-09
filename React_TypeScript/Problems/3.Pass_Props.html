@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>React Challenge: Pass Data from Child to Parent</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>💻 React Challenge</h1>
+    <h2>🧩 Problem: Pass Data from Child to Parent</h2>
+
+    <p><strong>Objective:</strong></p>
+    <p>Create two React components: a parent and a child. The child component should accept input from the user and send it to the parent component when a button is clicked.</p>
+
+    <h3>🔧 Requirements:</h3>
+    <ul>
+      <li>Use <code>useState</code> in both components.</li>
+      <li>The parent should define a function to receive data from the child.</li>
+      <li>Pass this function to the child via props.</li>
+      <li>The child should call the function with its input value.</li>
+      <li>The parent should display the received data.</li>
+    </ul>
+
+    <h3>✅ Example Output:</h3>
+    <pre>
+Child Component:
+[ input: "Hello" ] [ Send ]
+
+Parent Component:
+Data received from child: Hello
+    </pre>
+
+    <h3>📝 Bonus:</h3>
+    <ul>
+      <li>Clear the child input after sending.</li>
+      <li>Add simple styling to separate parent and child components.</li>
+    </ul>
+
+    <p><strong>Files to create:</strong></p>
+    <ul>
+      <li><code>App.js</code></li>
+      <li><code>ParentComponent.js</code></li>
+      <li><code>ChildComponent.js</code></li>
+    </ul>
+  </div>
+
+</body>
+</html>

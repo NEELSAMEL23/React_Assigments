@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>React.memo & useCallback Problem Statement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 40px;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 26px;
+      color: #111827;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      color: #374151;
+    }
+    ul, ol {
+      margin-left: 25px;
+    }
+    code {
+      background-color: #e5e7eb;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .note {
+      font-style: italic;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 React.memo & useCallback Optimization Challenge</h1>
+
+    <h2>📌 Problem Title:</h2>
+    <p><strong>Avoid Unnecessary Child Re-renders Using <code>React.memo</code> and <code>useCallback</code></strong></p>
+
+    <h2>🧾 Context:</h2>
+    <p>
+      You're building a React app with a parent and child component. The parent maintains two state variables:
+    </p>
+    <ul>
+      <li><code>parentCounter</code> — updated via a button in the parent</li>
+      <li><code>childClicks</code> — updated via a button in the child component</li>
+    </ul>
+    <p>
+      Currently, when you update the parent state, the child component also re-renders — even though its props didn't change. This needs to be optimized.
+    </p>
+
+    <h2>🎯 Objective:</h2>
+    <ul>
+      <li>Use <code>React.memo</code> to memoize the child component</li>
+      <li>Use <code>useCallback</code> to memoize the function passed to the child</li>
+      <li>Log re-renders with <code>console.log()</code> in both components</li>
+    </ul>
+
+    <h2>📋 Requirements:</h2>
+    <h3>Parent Component (<code>App.jsx</code>):</h3>
+    <ul>
+      <li>State 1: <code>parentCounter</code> — incremented on button click</li>
+      <li>State 2: <code>childClicks</code> — updated by child button click</li>
+      <li>Pass a memoized <code>handleChildClick</code> to the child using <code>useCallback</code></li>
+      <li>Log <code>"🟦 Parent rendered"</code> on each render</li>
+    </ul>
+
+    <h3>Child Component (<code>Child.jsx</code>):</h3>
+    <ul>
+      <li>Props: <code>onClick</code> (function), <code>clicks</code> (number)</li>
+      <li>Log <code>"🟨 Child rendered"</code> when the component renders</li>
+      <li>Wrap the component with <code>React.memo</code></li>
+    </ul>
+
+    <h2>✅ Expected Behavior:</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Action</th>
+        <th>Should Parent Re-render?</th>
+        <th>Should Child Re-render?</th>
+      </tr>
+      <tr>
+        <td>Click "Increment Parent"</td>
+        <td>✅ Yes</td>
+        <td>❌ No</td>
+      </tr>
+      <tr>
+        <td>Click "Click Me" (Child)</td>
+        <td>✅ Yes</td>
+        <td>✅ Yes</td>
+      </tr>
+    </table>
+
+    <h2>🧪 Console Logs:</h2>
+    <ul>
+      <li>Clicking parent button → logs <code>🟦 Parent rendered</code></li>
+      <li>Clicking child button → logs <code>🟨 Child rendered</code> and updates count</li>
+    </ul>
+
+    <h2>💡 Hint:</h2>
+    <p>
+      Use <code>useCallback(() =&gt; {...}, [])</code> to prevent function recreation and prop change in the child.
+    </p>
+
+    <p class="note">Tip: Use React DevTools Profiler to confirm render behavior visually.</p>
+  </div>
+</body>
+</html>

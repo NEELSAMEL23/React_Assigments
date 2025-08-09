@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-inline: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>L1 - Building an OTP Input Component with useRef</p>
+        <h1>Problem Statement:</h1>
+        <p>Create a React component for OTP input with four input fields. When the user types a digit in one field, the
+            focus automatically moves to the next. If the user presses backspace, the focus should move to the previous
+            field. Use useRef to manage these behaviors.</p>
+
+
+        <p><b>Requirements:</b></p>
+        <ul>
+            <li>Implement seamless focus navigation.</li>
+            <li>Use useRef to track input elements.</li>
+            <li>Avoid causing unnecessary re-renders.</li>
+        </ul>
+        <p><b>Example Interaction:</b></p>
+        <ol>
+            <li>User types "1" in the first input: Focus shifts to the second input.</li>
+            <li>User presses backspace in the second input: Focus shifts to the first input.</li>
+        </ol>
+    </div>
+</body>
+
+</html>

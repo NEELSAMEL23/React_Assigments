@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-inline: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Use of Chakra UI is mandatory</h3>
+        <h3>Overview</h3>
+        <hr>
+        <ul>
+            <li>Create a Redux store to manage the state of a list of users fetched from an API.</li>
+            <li>Use redux-thunk middleware to handle asynchronous actions.</li>
+        </ul>
+
+        <h2>Fetch Data:</h2>
+        <ul>
+            <li>Fetch user data from the following API:</li>
+            <li><a href="https://jsonplaceholder.typicode.com/users
+                ">https://jsonplaceholder.typicode.com/users
+                </a></li>
+            <li>Dispatch an action to save the fetched user data in the Redux store. Routing:</li>
+            <li>Use react-router-dom to set up two routes:</li>
+            <li>/: Displays a list of user names.</li>
+            <li>/user/:id: Displays detailed information about a selected user (e.g., name, email, phone, and address).
+                Components:</li>
+        </ul>
+
+
+
+        <h3>HomePage:</h3>
+        <ul>
+            <li>Show a list of user names. Each name should be a link to the /user/:id route.</li>
+        </ul>
+
+        <h3>UserDetailsPage:</h3>
+        <ul>
+            <li>Fetch the details of the selected user from the Redux store using the id from the route parameter. Bonus:</li>
+            <li>Show a loading spinner while the API data is being fetched.</li>
+            <li>Display a "Back to Home" button on the user details page to navigate back to the home page.</li>
+        </ul>
+        <h3>Expected Features</h3>
+        <ul>
+            <li>Use React-Redux for state management.</li>
+            <li>Use redux-thunk for asynchronous API calls.</li>
+            <li>Use react-router-dom for routing between pages.</li>
+            <li>The UI should update dynamically based on the data from the Redux store.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
