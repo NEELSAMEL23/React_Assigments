@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import axios from "axios";
 
 // Define the Joke type
-interface Joke {setup: string;
+interface Joke {
+  setup: string;
   punchline: string;
 }
 
