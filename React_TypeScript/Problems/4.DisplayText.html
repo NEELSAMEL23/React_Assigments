@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Problem Statement — Enter and Display Text</title>
+  <style>
+    :root{
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --border:rgba(15,23,42,0.06);
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      background: linear-gradient(180deg,var(--bg), #eef2ff 70%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:920px;
+      margin:48px auto;
+      padding:28px;
+    }
+
+    .card{
+      background:var(--card);
+      border: 1px solid var(--border);
+      border-radius:12px;
+      box-shadow: 0 6px 24px rgba(15,23,42,0.06);
+      padding:28px;
+      backdrop-filter: blur(6px);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    header .logo{
+      width:52px;
+      height:52px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      color:var(--card);
+      background:linear-gradient(135deg,var(--accent), #7c3aed);
+      box-shadow: 0 6px 18px rgba(37,99,235,0.14), inset 0 -6px 18px rgba(255,255,255,0.08);
+    }
+
+    h1{
+      font-size:20px;
+      margin:0;
+      letter-spacing:-0.2px;
+    }
+
+    p.lead{
+      margin-top:8px;
+      color:var(--muted);
+      line-height:1.5;
+    }
+
+    h2{
+      margin-top:20px;
+      margin-bottom:8px;
+      font-size:16px;
+    }
+
+    ul, ol{
+      margin:0 0 12px 20px;
+      color:var(--muted);
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    code{
+      background:#0f172a0a;
+      padding:2px 6px;
+      border-radius:6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+      font-size:0.95em;
+      color:#0f172a;
+    }
+
+    .example-box{
+      margin-top:14px;
+      padding:14px;
+      border-radius:10px;
+      background: linear-gradient(180deg,#fbfdff,#ffffff);
+      border:1px solid var(--border);
+    }
+
+    .footer-note{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:0.95em;
+    }
+
+    /* Responsive */
+    @media (max-width:600px){
+      .container{ padding:16px; margin:18px; }
+      header{ gap:10px; }
+      header .logo{ width:44px; height:44px; font-size:18px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">TXT</div>
+        <div>
+          <h1>Problem Statement — Enter and Display Text</h1>
+          <p class="lead">Create an HTML page with an input box and a button that displays the entered text on the page when the button is clicked.</p>
+        </div>
+      </header>
+
+      <h2>Requirements</h2>
+      <ul>
+        <li>Add an input field for the user to type text.</li>
+        <li>Add a button that, when clicked, shows the text typed by the user.</li>
+        <li>The displayed text should only update when the button is clicked, not while typing.</li>
+        <li>Use only one JavaScript variable to store and display the text.</li>
+      </ul>
+
+      <h2>Functionality Example</h2>
+      <ol>
+        <li>User types <code>"Hello"</code> in the input box → Output remains blank until button click.</li>
+        <li>User clicks the <code>"Show"</code> button → Output updates to <code>"Hello"</code>.</li>
+        <li>User changes input to <code>"World"</code> → Output still shows <code>"Hello"</code>.</li>
+        <li>User clicks the button again → Output updates to <code>"World"</code>.</li>
+      </ol>
+
+      
+
+    </div>
+  </div>
+</body>
+</html>

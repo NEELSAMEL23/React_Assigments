@@ -1,4 +1,4 @@
-{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}{\f2\fnil\fcharset0 Cambria;}{\f3\fnil\fcharset0 Arial Unicode MS;}{\f4\fnil Cambria;}{\f5\fnil\fcharset0 Calibri;}{\f6\fnil Calibri;}{\f7\fnil\fcharset0 Segoe UI Symbol;}{\f8\fnil Arial Unicode MS;}{\f9\fnil\fcharset2 Symbol;}}
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}{\f2\fnil\fcharset0 Cambria;}{\f3\fnil\fcharset0 Arial Unicode MS;}{\f4\fnil Cambria;}{\f5\fnil\fcharset0 Calibri;}{\f6\fnil Calibri;}{\f7\fnil\fcharset1 Segoe UI Symbol;}{\f8\fnil Segoe UI Symbol;}{\f9\fnil\fcharset0 Segoe UI Symbol;}{\f10\fnil Arial Unicode MS;}{\f11\fnil\fcharset2 Symbol;}}
 {\colortbl ;\red79\green129\blue189;\red54\green95\blue145;}
 {\*\generator Riched20 10.0.19041}\viewkind4\uc1 
 \pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\b\fs28\lang9 React Basics\b0\fs24\par
@@ -6,32 +6,32 @@
 \pard\sa200\sl276\slmult1\cf0\b\lang16393 1.\lang9  What is React?\par
 \b0 React is a JavaScript library developed by Facebook for building user interfaces, especially single-page applications (SPAs). \par
 \b\lang16393 2.\lang9 What is the role of React in software development?\par
-\b0 Role in Software Development:\line - Helps build interactive, dynamic, and fast UIs.\line - Promotes component-based architecture for modular and reusable code.\line - Efficiently updates and renders using virtual DOM.\par
+\b0 Role in Software Development:\line - Helps build interactive, dynamic, and fast UIs.\line - Promotes component-based architecture for reusable code.\line - Efficiently updates and renders using virtual DOM.\par
 \b\lang16393 3.\lang9 What are the key features of React?\par
 \b0 - Component-Based Architecture\line - Virtual DOM\line - JSX (JavaScript XML)\line - Unidirectional Data Flow\line - Reusable Components\line - Strong Community Support\par
-\b\lang16393 4.\lang9 Why do we use React over another library?\b0\par
-\b\lang16393 5.\lang9 Is React a library or a framework?\par
+\b\lang16393 4.\lang9 Is React a library or a framework?\par
 \b0 React is a library focused on building UI.\par
-\b\lang16393 6.\lang9 What is SPA (Single Page Application)?\par
+\b\lang16393 5.\lang9 What is SPA (Single Page Application)?\par
 \b0 SPA loads a single HTML page and dynamically updates content without refreshing.\line Benefits:\line - Faster navigation\line - Seamless UX\line - Less server load\par
-\b\lang16393 7.\lang9 What are the advantages of using React?\par
+\b\lang16393 6.\lang9 What are the advantages of using React?\par
 \b0 1. Fast Rendering with Virtual DOM\line 2. Reusable Components\line 3. Strong Ecosystem\line 4. Declarative Syntax with JSX\line 5. Great for SPAs\par
-\b\lang16393 8.\lang9 What are the disadvantages of using React?\par
+\b\lang16393 7.\lang9 What are the disadvantages of using React?\par
 \b0 1. JSX Learning Curve\line 2. Fast Pace of Change\line 3. Requires Build Tools\line 4. SEO Challenges\line 5. Heavy Reliance on JavaScript\par
-\b\lang16393 9.\lang9 What is the difference between React and ReactDOM?\par
-\b0 Virtual DOM is a lightweight copy of the real DOM kept in memory.\line React uses VDOM to efficiently compare and update changes.\line\line DOM vs Virtual DOM:\line - DOM: Slower updates, causes reflows/repaints.\line - Virtual DOM: Faster, updates only the changed parts.\line\par
+\b\lang16393 4.\lang9 What is the difference between React and ReactDOM?\par
+\b0 React vs ReactDOM:\line - React: Core library for component logic.\line - ReactDOM: Handles rendering to the browser DOM.\par
+\b\lang16393\par
+\b0\lang9\par
 
 \pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\b\fs28 JSX (JavaScript XML)\b0\fs24\par
 
-\pard\sa200\sl276\slmult1\cf0\b\lang16393 1.\lang9 What is JSX and what is its role in React?\par
-\b0 JSX allows writing HTML inside JavaScript.\line Simplifies UI creation.\line\line Example:\line const element = <h1>Hello, world!</h1>;\line JSX (JavaScript XML) is a syntax extension for JavaScript used in React to describe UI elements. It allows writing HTML-like code inside JavaScript, which gets compiled into React.createElement calls.\par
-\b\lang16393 2.\lang9 What are the advantages of JSX?\par
+\pard\sa200\sl276\slmult1\cf0\b\lang16393 1.\lang9 What is JSX in React?\par
+\b0 JSX allows writing HTML inside JavaScript.\line\line\b\lang16393 2.\lang9 What are the advantages of JSX?\par
 \b0 1. Readable Syntax: JSX looks like HTML.\line 2. Better Error Messages: Babel provides helpful errors.\line 3. Boosts Productivity: Combines JS and UI logic.\line 4. Powerful Tooling: Works well with IDEs.\line 5. Component-Friendly: Easier props passing and nesting.\par
 \b\lang16393 3.\lang9 Can a browser read a JSX file?\par
 \b0 No, browsers cannot directly read JSX. JSX must be transpiled (usually by Babel) into regular JavaScript.\par
 \b\lang16393 4.\lang9 What are Babel and Transpiler in React?\par
-\b0 Babel is a JavaScript transpiler that converts modern JavaScript (including JSX) into browser-compatible JavaScript. It transforms JSX into React.createElement calls and allows use of ES6+ features.\par
-\b\lang16393 5.\lang9 What is the difference between Compiler and Transpiler?\par
+\b0 Babel is a JavaScript transpiler that converts modern JavaScript (including JSX) into browser-compatible JavaScript.\par
+ \b\lang16393 5.\lang9 What is the difference between Compiler and Transpiler?\par
 \b0 Transpiler: Converts code from one version to another of the same language (e.g., JSX/ES6 to ES5).\line Compiler: Converts code from one language to another (e.g., TypeScript to JS).\line Difference: Compiler outputs a different language; transpiler outputs the same language.\par
 \b\lang16393 6.\lang9 Is it possible to use JSX without React?\par
 \b0 Yes, but it's impractical. JSX is mainly for React. To use it without React, you must provide your own function to handle JSX (e.g., a custom createElement).\par
@@ -52,13 +52,9 @@
 \pard\sa200\sl276\slmult1\cf0\fs24\lang16393 1.\lang9 What is DOM?\par
 \b0 DOM (Document Object Model) is a programming interface for HTML and XML documents.\par
 \b\lang16393 2.\lang9 What is the difference between HTML and DOM?\par
-\b0 HTML vs DOM:\line - HTML: Markup language used to create structure (Static)\line - DOM: In-memory representation of HTML (Dynamic, manipulated by JS)\par
-\b\lang16393 3.\lang9 What is Virtual DOM?\par
-\lang16393 4.\lang9 What is the difference between DOM and Virtual DOM?\par
-\b0 React vs ReactDOM:\line - React: Core library for component logic.\line - ReactDOM: Handles rendering to the browser DOM.\par
-\b 5.How does React\f1\rquote\f0 s Virtual DOM improve application performance?\par
-
-\pard\keep\keepn\sb200\sl276\slmult1\cf1\b0\par
+\b0 HTML vs DOM:\line - HTML: Markup language used to create structure (Static)\line - DOM: In-memory representation of HTML (Dynamic, manipulated by JS)\b\par
+3.How does React\f1\rquote\f0 s Virtual DOM improve application performance?\par
+\lang16393 4.\lang9 What is the difference between DOM and Virtual DOM?\b0 Virtual DOM is a lightweight copy of the real DOM kept in memory.\line React uses VDOM to efficiently compare and update changes.\line\line DOM vs Virtual DOM:\line - DOM: Slower updates, causes reflows/repaints.\line - Virtual DOM: Faster, updates only the changed parts.\line\cf1\par
 
 \pard\keep\keepn\sb200\sl276\slmult1\qc\b\fs28 Components\par
 
@@ -72,94 +68,87 @@
 \pard\sa200\sl240\slmult1\b0\f2\fs22 Functional components are JavaScript functions that return JSX (JavaScript XML). Functional components are now the default choice in React unless you need something very specific that class components offer (which is rare with Hooks). \par
 Benefits \par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Cleaner and shorter code\par
-{\pntext\f9\'B7\tab}Easy to write and read\par
-{\pntext\f9\'B7\tab}No this binding issues\b\f0\fs24\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Cleaner and shorter code\par
+{\pntext\f11\'B7\tab}Easy to write and read\par
+{\pntext\f11\'B7\tab}No this binding issues\b\f0\fs24\par
 
 \pard\sa200\sl276\slmult1\f3\lang16393 5.\f0\lang9 What are class components?\par
 \b0\f2\fs22 Class Components are one of the two main types of components in React (the other being functional components). They are built using ES6 classes and extend React.Component.\b\f0\fs24\par
 \f3\lang16393 6.\f0\lang9 What is the difference between functional and class components?\par
 \b0\f2\fs22 1. Syntax\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components are written using plain JavaScript functions or arrow functions.\par
-{\pntext\f9\'B7\tab}Class components are written using ES6 class syntax and extend React.Component.\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components are written using plain JavaScript functions or arrow functions.\par
+{\pntext\f11\'B7\tab}Class components are written using ES6 class syntax and extend React.Component.\par
 
 \pard\sa200\sl276\slmult1 2. State Management\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components use Hooks like useState and useReducer to handle state.\par
-{\pntext\f9\'B7\tab}Class components manage state using this.state and update it with this.setState().\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components use Hooks like useState and useReducer to handle state.\par
+{\pntext\f11\'B7\tab}Class components manage state using this.state and update it with this.setState().\par
 
 \pard\sa200\sl276\slmult1  3. Lifecycle Methods\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 In functional components, lifecycle features are handled using Hooks such as useEffect, useLayoutEffect, etc.\par
-{\pntext\f9\'B7\tab}In class components, you use lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 In functional components, lifecycle features are handled using Hooks such as useEffect, useLayoutEffect, etc.\par
+{\pntext\f11\'B7\tab}In class components, you use lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.\par
 
 \pard\sa200\sl276\slmult1  4. Use of this Keyword\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components do not use the this keyword.\par
-{\pntext\f9\'B7\tab}Class components require this to access state, props, and methods.\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components do not use the this keyword.\par
+{\pntext\f11\'B7\tab}Class components require this to access state, props, and methods.\par
 
 \pard\sa200\sl276\slmult1 5. Code Simplicity and Readability\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components are simpler, more concise, and easier to read and test.\par
-{\pntext\f9\'B7\tab}Class components tend to be more verbose and involve more boilerplate code. \b\f0\fs24\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Functional components are simpler, more concise, and easier to read and test.\par
+{\pntext\f11\'B7\tab}Class components tend to be more verbose and involve more boilerplate code. \b\f0\fs24\par
 
 \pard\sa200\sl276\slmult1\f3\lang16393 7.\f0\lang9 What is the role of this keyword in class components?\par
-\b0\f2\fs22 In React class components, the this keyword refers to the current instance of the component. It\rquote s used to access:\par
+\b0\f2\fs22 In React class components, the this keyword refers to the current instance of the component. It\f4\rquote\f2 s used to access:\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 this.state \f4\endash\f2  component's state\par
-{\pntext\f9\'B7\tab}this.props \f4\endash\f2  props passed to the component\par
-{\pntext\f9\'B7\tab}this.methodName() \f4\endash\f2  class methods\par
-{\pntext\f9\'B7\tab}this.setState() \f4\endash\f2  to update the state\b\f0\fs24\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 this.state \f4\endash  \f2 component's state\par
+{\pntext\f11\'B7\tab}this.props \f4\endash  \f2 props passed to the component\par
+{\pntext\f11\'B7\tab}this.methodName() \f4\endash  \f2 class methods\par
+{\pntext\f11\'B7\tab}this.setState() \f4\endash  \f2 to update the state\b\f0\fs24\par
 
 \pard\sa200\sl276\slmult1\f3\lang16393 8.\f0\lang9 What are controlled and uncontrolled components in React?\par
 
-\pard\sa200\sl240\slmult1\f5\fs22 Data Source\par
-\b0 React state (useState or this.state)\tab\par
-DOM (ref and internal state)\par
-\b Input Control\par
-\b0 Controlled by React\tab\par
-Controlled by the DOM\par
-\b Accessing Value\par
-\b0 Via state and onChange\tab\par
-Via ref.current.value\par
-\b Ideal For\par
-\b0 Dynamic, real-time validation\tab\par
-Simple forms, minimal logic\b\f0\fs24\par
+\pard\sl240\slmult1 Controlled Components\par
+\b0\fs22 A controlled component is a form element whose value is managed by React state.\fs24\par
+\par
+\b Uncontrolled Components\par
 
-\pard\sa200\sl276\slmult1\f3\lang16393 9.\f0\lang9 What are the characteristics and advantages of controlled components?\par
-
-\pard\sa200\sl240\slmult1\b0\f5\fs22 Form inputs are bound to React state.\par
-The source of truth is React's state.\par
-UI reflects the state, and any change is handled via an onChange handler.\b\f0\fs24\par
-
-\pard\sa200\sl276\slmult1\f3\lang16393 10.\f0\lang9 In what scenarios might using uncontrolled components be advantageous?\par
-\b0\f5\fs22 Uncontrolled components are better when:\par
-You don\rquote t need to validate or manipulate input data frequently.\par
+\pard\sa200\sl276\slmult1\b0\fs22 An uncontrolled component is a form element whose value is managed by the DOM itself, and React accesses the value only when needed, usually through a ref.\b\fs24\par
+\f3\lang16393 9.\f0\lang9 What are the advantages of controlled components?\b0\f5\fs22\par
+\b\f3\fs24\lang16393 10.\f0\lang9 In what scenarios might using uncontrolled components be advantageous?\par
+\b0\f5\fs22 Uncontrolled components are better when: \par
+You don\f6\rquote\f5 t need to validate or manipulate input data frequently.\par
 You want faster performance (no re-renders on every keystroke).\par
-You are integrating with non-React libraries or raw form elements.\par
 Simpler input fields like file uploads (using ref to access file)\b\f0\fs24\par
 \f3\lang16393 11.\f0\lang9 What is Prop Drilling and why should we avoid it?\par
-\b0\f2\fs22 Prop Drilling is a term used in React when you pass data (props) from a parent component down to deeply nested child components, even if intermediate components don\rquote t need that data themselves.\par
+\b0\f2\fs22 Prop Drilling is a term used in React when you pass data (props) from a parent component down to deeply nested child components, even if intermediate components don\f4\rquote\f2 t need that data themselves.\par
 
-\pard{\pntext\f9\'B7\tab}{\*\pn\pnlvlblt\pnf9\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Makes code hard to read and maintain\par
-{\pntext\f9\'B7\tab}Intermediate components become unnecessarily complex\par
-{\pntext\f9\'B7\tab}Difficult to refactor or reuse components\par
-{\pntext\f9\'B7\tab}Increases tight coupling between components\b\f0\fs24\par
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl240\slmult1 Makes code hard to read and maintain\par
+{\pntext\f11\'B7\tab}Intermediate components become unnecessarily complex\par
+{\pntext\f11\'B7\tab}Difficult to refactor or reuse components\par
+{\pntext\f11\'B7\tab}Increases tight coupling between components\b\f0\fs24\par
 
 \pard\sa200\sl276\slmult1\f3\lang16393 12.\f0\lang9 How can we avoid Prop Drilling?\par
 
-\pard\sa200\sl240\slmult1\b0\f2\fs22 Two Ways:- React Context API \f4\endash\f2  Best for medium complexity\par
-State Management Tools \f4\endash\f2  e.g., Redux, Zustand, Recoil\b\f0\fs24\par
+\pard\sa200\sl240\slmult1\b0\f2\fs22 Two Ways:- React Context API \f4\endash  \f2 Best for medium complexity\par
+State Management Tools \f4\endash  \f2 e.g., Redux, Zustand, Recoil\b\f0\fs24\par
 
 \pard\sa200\sl276\slmult1\f3\lang16393 13.\f0\lang9 How do you pass data between functional/class components?\par
 
-\pard\sa200\sl240\slmult1\b0\f2\fs22 In React, data is always passed in a unidirectional flow \f4\emdash\f2  from parent to child via props, and from child to parent using callback functions.\cf2\b  \cf0\f0\fs24\par
+\pard\sa200\sl240\slmult1\b0\f2\fs22 In React, data is always passed in a unidirectional flow \f4\emdash  \f2 from parent to child via props, and from child to parent using callback functions.\b\f0\fs24\par
 
-\pard\sa200\sl276\slmult1\f3\lang16393 14.\f0\lang9 Can we change the data in the child prop?\par
-\par
+\pard\sa200\sl276\slmult1\f3\lang16393 14.\f0\lang9 Can we change the data in the child prop?\b0\par
 
-\pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\fs28 Files, Folders & Setup\par
+\pard\sl240\slmult1 If by "change the data in the child prop" you mean mutating the prop directly inside the child component \f1\emdash\par
+then in React (and especially in TypeScript) the answer is \f7\u10060?\f1  \f0 No, you shouldn\f1\rquote\f0 t.\par
+
+\pard 
+{\pntext\f0 I.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnucrm{\pntxta.}}
+\fi-360\li720\sa200\sl240\slmult1\b Props in React are read-only\b0\par
+
+\pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\b\fs28 Files, Folders & Setup\par
 
 \pard\sa200\sl276\slmult1\cf0\f3\fs24\lang16393 1.\f0\lang9 What is NPM?\par
 \b0 NPM (Node Package Manager) is the default package manager for Node.js. It allows you to:\line - Install libraries/packages (like React, Axios, Express, etc.)\line - Manage dependencies for a project using package.json\line - Run scripts (like npm start, npm run build, etc.)\par
@@ -190,9 +179,9 @@ State Management Tools \f4\endash\f2  e.g., Redux, Zustand, Recoil\b\f0\fs24\par
 1.\f0\lang9 What are the component lifecycle phases?\par
 
 \pard\sa200\sl240\slmult1\b0\f5\fs22 React class components go through three main phases in their lifecycle:\par
-\b Mounting \b0\f6\endash\f5  When the component is being created and inserted into the DOM.\par
-\b Updating \b0\f6\endash\f5  When the component is being re-rendered due to changes in props or state.\par
-\b Unmounting \b0\f6\endash\f5  When the component is removed from the DOM.\par
+\b Mounting \b0\f6\endash  \f5 When the component is being created and inserted into the DOM.\par
+\b Updating \b0\f6\endash  \f5 When the component is being re-rendered due to changes in props or state.\par
+\b Unmounting \b0\f6\endash  \f5 When the component is removed from the DOM.\par
 
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
 \f3\lang16393 2.\f0\lang9 What are lifecycle methods in class components?\par
@@ -243,12 +232,12 @@ Use this.setState() to update the state and trigger a re-render.\par
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
 \f3\lang16393 2.\f0\lang9 What are the top React Hooks?\par
 
-\pard\sa200\sl240\slmult1\b0\f5\fs22 useState() \f6\endash\f5  for adding state in functional components\line useEffect() \f6\endash\f5  for side effects (API calls, timers, DOM updates)\line useContext() \f6\endash\f5  for accessing context values (like global state)\line useRef() \f6\endash\f5  for referencing DOM elements or persisting values across renders\line useReducer() \f6\endash\f5  for complex state management (alternative to useState)\line useMemo() \f6\endash\f5  for performance optimization (memoizing expensive values)\line useCallback() \f6\endash\f5  for memoizing functions\cf2\b\fs28\par
+\pard\sa200\sl240\slmult1\b0\f5\fs22 useState() \f6\endash  \f5 for adding state in functional components\line useEffect() \f6\endash  \f5 for side effects (API calls, timers, DOM updates)\line useContext() \f6\endash  \f5 for accessing context values (like global state)\line useRef() \f6\endash  \f5 for referencing DOM elements or persisting values across renders\line useReducer() \f6\endash  \f5 for complex state management (alternative to useState)\line useMemo() \f6\endash  \f5 for performance optimization (memoizing expensive values)\line useCallback() \f6\endash  \f5 for memoizing functions\cf2\b\fs28\par
 
 \pard\sa200\sl276\slmult1\cf0\f0\fs24\par
 \f3\lang16393 3.\f0\lang9 What are state/stateless/stateful components and state management?\par
 
-\pard\sa200\sl240\slmult1\b0\f5\fs22 State is a data container that determines how a component behaves or renders.\line It\f7\rquote\f5 s mutable (can change over time) and triggers re-renders when updated.\line\cf2\b\fs28 Stateless Components\line\cf0\b0\fs22 Do not hold state\line Pure functions that take props and return JSX\line\cf2\b\fs28 Stateful Components\line\cf0\b0\fs22 Hold and manage internal state\line Can be either class components or functional components with hooks\line\cf2\b\fs28 Stateful Components\cf0\b0\fs22\line Strategy or tools to manage and share state across components.\line Can be:\line Local state (using useState)\line Global state (using useContext, Redux, Zustand, etc.)\par
+\pard\sa200\sl240\slmult1\b0\f5\fs22 State is a data container that determines how a component behaves or renders.\line It\f8\rquote\f5 s mutable (can change over time) and triggers re-renders when updated.\line\cf2\b\fs28 Stateless Components\line\cf0\b0\fs22 Do not hold state\line Pure functions that take props and return JSX\line\cf2\b\fs28 Stateful Components\line\cf0\b0\fs22 Hold and manage internal state\line Can be either class components or functional components with hooks\line\cf2\b\fs28 Stateful Components\cf0\b0\fs22\line Strategy or tools to manage and share state across components.\line Can be:\line Local state (using useState)\line Global state (using useContext, Redux, Zustand, etc.)\par
 
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
 
@@ -256,7 +245,7 @@ Use this.setState() to update the state and trigger a re-render.\par
 
 \pard\sa200\sl276\slmult1\cf0\f3\fs24\lang16393 1.\f0\lang9 What is the useState() hook?\par
 \f3\lang16393 2.\f0\lang9 Why do we use useState()?\par
-\b0\f5\fs22 Depends on how complex your component's state and logic are. \line\b\f7 Simple State\f5\line\b0 You only need to manage primitive values like number, string, boolean.\line\b Independent State Variables\line\b0 Each state value is separate (e.g. isLoading, count, inputValue)\line\b\f7 Quick Prototyping\f5\line\b0\f7 useState is easier and cleaner for small components.\f5\line\b\f0\fs24 3.How does useState() work?\par
+\b0\f5\fs22 Depends on how complex your component's state and logic are. \line\b\f9 Simple State\f5\line\b0 You only need to manage primitive values like number, string, boolean.\line\b Independent State Variables\line\b0 Each state value is separate (e.g. isLoading, count, inputValue)\line\b\f9 Quick Prototyping\f5\line\b0\f9 useState is easier and cleaner for small components.\f5\line\b\f0\fs24 3.How does useState() work?\par
 
 \pard 
 {\pntext\f5 1.\tab}{\*\pn\pnlvlbody\pnf5\pnindent360\pnstart1\pndec{\pntxta.}}
@@ -294,7 +283,7 @@ Fetching data on component load\par
 Setting up subscriptions or event listeners\par
 
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
-\f3\lang16393 4.\f0\lang9  What happens if you don\f8\rquote\f0 t provide a dependency array?\par
+\f3\lang16393 4.\f0\lang9  What happens if you don\f10\rquote\f0 t provide a dependency array?\par
 \f3\lang16393 5.\f0\lang9  What is the cleanup function in useEffect() and why is it essential? (Give example)\par
 
 \pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\fs28 useMemo & useCallback\par
@@ -344,27 +333,23 @@ So, do not use Switch in v6.\cf2\b\f5\fs28\par
 
 \pard\sa200\sl240\slmult1\b0\f2\fs22 Used in React Router v5 to prevent partial matching.\par
 Without exact, / would match every route that starts with /, like /about.\par
-In React Router v6, exact is no longer needed, because matching is exact by default.\cf2\b\f7\fs28\par
+In React Router v6, exact is no longer needed, because matching is exact by default.\cf2\b\f9\fs28\par
 
 \pard\sa200\sl276\slmult1\cf0\f0\fs24\par
 
 \pard\keep\keepn\sb200\sl276\slmult1\qc\cf1\fs28 useContext & useReducer\par
 
 \pard\sa200\sl276\slmult1\cf0\f3\fs24\lang16393 1.\f0\lang9 What is useContext() hook?\par
-
-\pard\sa200\sl276\slmult1\b0\f5\fs22 The useContext() hook in React allows a functional component to access the values stored in a context created by createContext(), without having to pass props manually at every level (known as prop drilling). \line const value = useContext(MyContext)\cf2\b\fs28\par
-
-\pard\sa200\sl276\slmult1\cf0\f0\fs24\par
+\b0\f5\fs22 The useContext() hook in React allows a functional component to access the values stored in a context created by createContext(), without having to pass props manually at every level (known as prop drilling). \line const value = useContext(MyContext)\cf2\b\fs28\par
+\cf0\f0\fs24\par
 \f3\lang16393 2.\f0\lang9 What is createContext() method?\par
-
-\pard\sa200\sl276\slmult1\b0\f5\fs22 createContext() is used to create a Context object. It provides two main components:\line Provider: Supplies the context value.\line Consumer: Reads the context value (though useContext is preferred instead of Consumer in functional components).\line const MyContext = React.createContext()\par
-
-\pard\sa200\sl276\slmult1\b\f0\fs24\par
+\b0\f5\fs22 createContext() is used to create a Context object. It provides two main components:\line Provider: Supplies the context value.\line Consumer: Reads the context value (though useContext is preferred instead of Consumer in functional components).\line const MyContext = React.createContext()\par
+\b\f0\fs24\par
 \f3\lang16393 3.\f0\lang9 What are Provider & Consumer in context?\par
-\f8\bullet\f0  When should you use useContext() instead of props?\par
+\f10\bullet\f1  \f0 When should you use useContext() instead of props?\par
 
 \pard\sl240\slmult1\b0\f5\fs22 You should use the useContext() hook when you need to share data across multiple\par
-components without prop drilling \f6\emdash\f5  especially when that data is needed deeply in the\par
+components without prop drilling \f6\emdash  \f5 especially when that data is needed deeply in the\par
 component tree.\par
 
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
@@ -378,7 +363,7 @@ There are multiple sub-values or actions that update the state in different ways
 
 \pard\sa200\sl276\slmult1\b\f0\fs24\par
 \f3\lang16393 5.\f0\lang9 When to use useState() vs useReducer()?\par
-\b0\f5\fs22 Depends on how complex your component's state and logic are. \line\b Complex State Logic\line\b0 You have multiple related state variables or need switch-like decision making.\line\b\f7 Dependent on Previous State\tab\line\b0 Next state relies on previous state values.\line\b Many Actions\tab\line\b0 You have different ways to update state (e.g., add, remove, reset).\line\b Better State Organization\line\b0 Helpful for grouping logic in one reducer function.\line\b Reusable Logic or Redux Migration\cf2\f5\fs28\line\cf0\b0\f7\fs22 Good when the logic might grow or move into Redux later.\b\f0\fs24\par
+\b0\f5\fs22 Depends on how complex your component's state and logic are. \line\b Complex State Logic\line\b0 You have multiple related state variables or need switch-like decision making.\line\b\f9 Dependent on Previous State\tab\line\b0 Next state relies on previous state values.\line\b Many Actions\tab\line\b0 You have different ways to update state (e.g., add, remove, reset).\line\b Better State Organization\line\b0 Helpful for grouping logic in one reducer function.\line\b Reusable Logic or Redux Migration\cf2\f5\fs28\line\cf0\b0\f9\fs22 Good when the logic might grow or move into Redux later.\b\f0\fs24\par
 \f3\lang16393 6.\f0\lang9 What are dispatch and reducer functions in useReducer()?\par
 \b0\f5\fs22 dispatch(action): Sends an action object to the reducer function.\line reducer(state, action): A pure function that takes the current state and action, and returns the new state.\line\b\f0\fs24\par
 \f3\lang16393 7.\f0\lang9 What is the purpose of passing an initial state as an object?\par

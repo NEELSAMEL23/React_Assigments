@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Problem Statement</h1>
+        <p>
+            Create a React + TypeScript component that uses <code>useRef</code> to directly access
+            and manipulate a DOM element. The component should render a button labeled
+            <strong>"Click Me"</strong>. When the button is clicked, its label should change to
+            <strong>"Clicked!"</strong> without using React state. Instead, the label update should
+            be done by modifying the DOM element through the <code>useRef</code> reference.
+        </p>
+        <h3>Requirements:</h3>
+        <ul>
+            <li>Use <code>useRef</code> to store a reference to the button element.</li>
+            <li>On button click, change its text content to <strong>"Clicked!"</strong>.</li>
+            <li>Do not use <code>useState</code> for this functionality.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

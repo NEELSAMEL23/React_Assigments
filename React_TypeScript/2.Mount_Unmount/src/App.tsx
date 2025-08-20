@@ -17,6 +17,7 @@ const App: React.FC = () => {
   );
 };
 
+
 const UnmountComponent: React.FC = () => {
   useEffect(() => {
     console.log("Component Mounted");
